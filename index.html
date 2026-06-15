@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zwischen Heide & Herz – Freier Trauredner Eduard Schmal | Lüneburger Heide</title>
+  <meta name="description" content="Freier Trauredner für individuelle Zeremonien in der Lüneburger Heide. Eduard Schmal gestaltet eure freie Trauung so persönlich wie eure Liebesgeschichte – mit einer Tiefe der Vorbereitung, die ihresgleichen sucht.">
+  <meta property="og:title" content="Zwischen Heide & Herz – Freier Trauredner | Lüneburger Heide">
+  <meta property="og:description" content="Eure Geschichte. Euer Ja-Wort. Für immer. Freier Trauredner Eduard Schmal.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --cream:       #fdf8f4;
+      --blush:       #f5e9e1;
+      --blush-mid:   #edd9cc;
+      --blush-dark:  #dfc3b0;
+      --rose:        #b87060;
+      --rose-dark:   #8b4f3f;
+      --brown:       #3d2417;
+      --brown-mid:   #6b4535;
+      --white:       #ffffff;
+      --shadow:      rgba(61, 36, 23, 0.12);
+      --font-display:'Cormorant Garamond', Georgia, serif;
+      --font-body:   'Lato', sans-serif;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font-body);
+      color: var(--brown);
+      background: var(--cream);
+      line-height: 1.75;
+      overflow-x: hidden;
+    }
+
+    /* ─── TYPOGRAPHY ─── */
+    h1, h2, h3, h4 {
+      font-family: var(--font-display);
+      font-weight: 400;
+      line-height: 1.15;
+    }
+    h1 { font-size: clamp(2.8rem, 5.5vw, 5rem); }
+    h2 { font-size: clamp(2rem, 4vw, 3.2rem); }
+    h3 { font-size: clamp(1.3rem, 2.5vw, 1.85rem); }
+
+    .eyebrow {
+      display: block;
+      font-family: var(--font-body);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--rose);
+      margin-bottom: 0.8rem;
+    }
+
+    .lead {
+      font-family: var(--font-display);
+      font-size: clamp(1.1rem, 2vw, 1.4rem);
+      font-weight: 300;
+      font-style: italic;
+      line-height: 1.65;
+      color: var(--brown-mid);
+    }
+
+    p { color: var(--brown-mid); max-width: 65ch; }
+
+    /* ─── LAYOUT ─── */
+    .container { width: 90%; max-width: 1200px; margin: 0 auto; }
+    section { overflow: hidden; }
+
+    /* ─── DIVIDER ─── */
+    .divider {
+      width: 56px; height: 1.5px;
+      background: var(--rose);
+      margin: 1.5rem 0 2rem;
+    }
+    .divider-center { margin-left: auto; margin-right: auto; }
+
+    /* ─── BUTTONS ─── */
+    .btn {
+      display: inline-block;
+      padding: 0.85rem 2.2rem;
+      text-decoration: none;
+      font-family: var(--font-body);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      border: none;
+      cursor: pointer;
+      transition: all 0.25s;
+    }
+    .btn-primary { background: var(--rose); color: var(--white); }
+    .btn-primary:hover {
+      background: var(--rose-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(184,112,96,0.35);
+    }
+    .btn-outline {
+      background: transparent;
+      color: var(--rose);
+      border: 1.5px solid var(--rose);
+    }
+    .btn-outline:hover { background: var(--rose); color: var(--white); }
+    .btn-outline-light {
+      background: transparent;
+      color: rgba(255,255,255,0.9);
+      border: 1.5px solid rgba(255,255,255,0.5);
+    }
+    .btn-outline-light:hover { background: rgba(255,255,255,0.15); }
+
+    /* ─── NAV ─── */
+    #nav {
+      position: fixed; top: 0; left: 0; right: 0;
+      z-index: 200;
+      padding: 1.4rem 0;
+      transition: background 0.4s, box-shadow 0.4s, padding 0.4s;
+    }
+    #nav.scrolled {
+      background: rgba(253,248,244,0.97);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 1px 24px var(--shadow);
+      padding: 0.8rem 0;
+    }
+    .nav-inner { display: flex; align-items: center; justify-content: space-between; }
+
+    .nav-logo { display: flex; align-items: center; gap: 0.9rem; text-decoration: none; }
+    .nav-logo svg { width: 50px; height: 50px; flex-shrink: 0; }
+    .nav-brand {
+      font-family: var(--font-display);
+      font-size: 1.05rem;
+      font-weight: 500;
+      color: var(--brown);
+      line-height: 1.25;
+    }
+    .nav-brand span {
+      display: block;
+      font-size: 0.65rem;
+      font-family: var(--font-body);
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--rose);
+    }
+
+    .nav-links { display: flex; gap: 2rem; list-style: none; align-items: center; }
+    .nav-links a {
+      font-family: var(--font-body);
+      font-size: 0.82rem;
+      font-weight: 400;
+      letter-spacing: 0.04em;
+      color: var(--brown);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--rose); }
+    .nav-cta.btn { padding: 0.65rem 1.5rem; font-size: 0.72rem; }
+
+    .nav-toggle {
+      display: none;
+      background: none; border: none; cursor: pointer;
+      flex-direction: column; gap: 5px; padding: 4px; z-index: 201;
+    }
+    .nav-toggle span { display: block; width: 24px; height: 1.5px; background: var(--brown); transition: all 0.3s; }
+
+    @media (max-width: 860px) {
+      .nav-links {
+        position: fixed; inset: 0;
+        background: var(--cream);
+        flex-direction: column; justify-content: center;
+        gap: 2.5rem; font-size: 1.3rem;
+        transform: translateX(100%);
+        transition: transform 0.35s ease;
+        z-index: 200;
+      }
+      .nav-links.open { transform: translateX(0); }
+      .nav-links a { font-size: 1.2rem; }
+      .nav-toggle { display: flex; }
+    }
+
+    /* ─── HERO ─── */
+    #hero {
+      min-height: 100vh;
+      position: relative;
+      display: flex; align-items: center;
+      padding: 8rem 0 5rem;
+    }
+    .hero-bg {
+      position: absolute; inset: 0;
+      background-image: url('https://images.unsplash.com/photo-1519741347686-c1e0aadf4611?w=1920&q=80&auto=format&fit=crop');
+      background-size: cover; background-position: center 45%;
+      z-index: 0;
+    }
+    .hero-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(
+        130deg,
+        rgba(253,248,244,0.94) 0%,
+        rgba(245,233,225,0.85) 45%,
+        rgba(245,233,225,0.55) 100%
+      );
+      z-index: 1;
+    }
+    .hero-content { position: relative; z-index: 2; max-width: 680px; }
+    .hero-content h1 { margin-bottom: 1.5rem; color: var(--brown); }
+    .hero-content h1 em { font-style: italic; color: var(--rose); }
+    .hero-content .lead { margin-bottom: 2.5rem; }
+    .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; align-items: center; }
+
+    .hero-scroll {
+      position: absolute; bottom: 2.5rem; left: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
+      display: flex; flex-direction: column; align-items: center; gap: 0.5rem;
+      color: var(--brown-mid); font-size: 0.68rem;
+      letter-spacing: 0.18em; text-transform: uppercase;
+      text-decoration: none; opacity: 0.65;
+      animation: scrollbounce 2.2s ease-in-out infinite;
+    }
+    .hero-scroll svg { width: 20px; height: 20px; stroke: var(--rose); fill: none; stroke-width: 1.5; }
+    @keyframes scrollbounce {
+      0%, 100% { transform: translateX(-50%) translateY(0); }
+      55% { transform: translateX(-50%) translateY(7px); }
+    }
+
+    /* ─── NUMBERS BAR ─── */
+    #numbers {
+      background: var(--brown);
+      padding: 3.5rem 0;
+    }
+    .numbers-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2px;
+      background: rgba(255,255,255,0.05);
+    }
+    @media (max-width: 600px) { .numbers-grid { grid-template-columns: 1fr; } }
+    .number-item {
+      padding: 2rem;
+      text-align: center;
+      background: var(--brown);
+    }
+    .number-value {
+      font-family: var(--font-display);
+      font-size: 3rem;
+      font-weight: 300;
+      color: var(--blush);
+      display: block;
+      line-height: 1;
+      margin-bottom: 0.5rem;
+    }
+    .number-label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.4);
+    }
+
+    /* ─── ABOUT ─── */
+    #about { padding: 8rem 0; background: var(--cream); }
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.1fr;
+      gap: 6rem;
+      align-items: center;
+    }
+    @media (max-width: 900px) {
+      .about-grid { grid-template-columns: 1fr; gap: 3.5rem; }
+    }
+
+    .about-image-wrap { position: relative; }
+    .about-image-frame {
+      position: absolute;
+      top: -1.5rem; left: -1.5rem; right: 1.5rem; bottom: 1.5rem;
+      border: 1.5px solid var(--blush-dark);
+      pointer-events: none; z-index: 0;
+    }
+    .about-image-wrap img {
+      position: relative; z-index: 1;
+      width: 100%; aspect-ratio: 3/4;
+      object-fit: cover; display: block;
+    }
+    .about-image-caption {
+      position: absolute; bottom: 2.5rem; left: 1rem; right: 2rem;
+      z-index: 2;
+      background: rgba(253,248,244,0.96);
+      padding: 1.25rem 1.5rem;
+      border-left: 3px solid var(--rose);
+      font-family: var(--font-display);
+      font-style: italic;
+      font-size: 1rem;
+      color: var(--brown);
+    }
+
+    .about-text h2 { margin-bottom: 0.75rem; }
+    .about-text p { margin-bottom: 1.3rem; line-height: 1.85; }
+    .about-quote {
+      margin: 1.75rem 0;
+      padding: 1.5rem 1.5rem 1.5rem 2rem;
+      border-left: 3px solid var(--rose);
+      background: var(--blush);
+    }
+    .about-quote p {
+      font-family: var(--font-display);
+      font-style: italic;
+      font-size: 1.25rem;
+      color: var(--brown);
+      max-width: 100%;
+      line-height: 1.55;
+    }
+
+    /* ─── HOW ─── */
+    #how { padding: 8rem 0; background: var(--blush); }
+    .how-header { text-align: center; max-width: 700px; margin: 0 auto 5rem; }
+    .how-header h2 { margin-bottom: 0.75rem; }
+    .how-header .lead { display: block; margin: 0 auto 0; }
+
+    .how-steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2px;
+      background: var(--blush-dark);
+      margin-bottom: 2px;
+    }
+    @media (max-width: 900px) {
+      .how-steps {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 520px) {
+      .how-steps { grid-template-columns: 1fr; }
+    }
+
+    .how-step {
+      background: var(--cream);
+      padding: 2.5rem 2rem 2.5rem;
+      position: relative;
+    }
+    .how-step-num {
+      font-family: var(--font-display);
+      font-size: 5rem;
+      font-weight: 300;
+      color: var(--blush-dark);
+      line-height: 0.9;
+      display: block;
+      margin-bottom: 1.25rem;
+    }
+    .how-step h3 { font-size: 1.15rem; margin-bottom: 0.65rem; }
+    .how-step p { font-size: 0.88rem; line-height: 1.75; }
+
+    .how-banner {
+      background: var(--rose);
+      padding: 3rem 3.5rem;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 2.5rem;
+      align-items: center;
+    }
+    @media (max-width: 600px) {
+      .how-banner { grid-template-columns: 1fr; gap: 1.5rem; padding: 2.5rem 2rem; }
+    }
+    .how-banner-icon {
+      font-family: var(--font-display);
+      font-size: 4rem;
+      color: rgba(255,255,255,0.25);
+      line-height: 1;
+      user-select: none;
+    }
+    .how-banner h3 { font-size: 1.5rem; color: var(--white); margin-bottom: 0.5rem; }
+    .how-banner p { color: rgba(255,255,255,0.82); max-width: 100%; font-size: 0.95rem; }
+
+    /* ─── RITUALE ─── */
+    #rituale { padding: 8rem 0; background: var(--cream); }
+    .section-header { text-align: center; max-width: 680px; margin: 0 auto 4rem; }
+    .section-header h2 { margin-bottom: 0.75rem; }
+    .section-header p { margin: 0 auto; text-align: center; }
+
+    .rituale-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+    @media (max-width: 900px) { .rituale-grid { grid-template-columns: repeat(2,1fr); } }
+    @media (max-width: 580px) { .rituale-grid { grid-template-columns: 1fr; } }
+
+    .ritual-card {
+      padding: 2rem 1.75rem;
+      background: var(--blush);
+      border-top: 3px solid var(--rose);
+      transition: transform 0.25s, box-shadow 0.25s;
+    }
+    .ritual-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 14px 36px var(--shadow);
+    }
+    .ritual-icon { font-size: 1.75rem; display: block; margin-bottom: 1rem; }
+    .ritual-card h3 { font-size: 1.15rem; margin-bottom: 0.5rem; }
+    .ritual-card p { font-size: 0.87rem; line-height: 1.75; }
+
+    /* ─── PRICING ─── */
+    #pakete { padding: 8rem 0; background: var(--blush); }
+    .pakete-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2px;
+      background: var(--blush-dark);
+    }
+    @media (max-width: 900px) {
+      .pakete-grid { grid-template-columns: 1fr; gap: 1.5rem; background: none; }
+    }
+
+    .paket {
+      background: var(--cream);
+      padding: 3rem 2.5rem;
+      display: flex; flex-direction: column;
+      position: relative;
+    }
+    .paket.featured { background: var(--brown); }
+
+    .paket-badge {
+      position: absolute; top: 1.5rem; right: 1.5rem;
+      background: var(--rose); color: var(--white);
+      font-size: 0.62rem; font-weight: 700;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      padding: 0.28rem 0.7rem;
+    }
+
+    .paket-tier {
+      font-family: var(--font-body);
+      font-size: 0.68rem; font-weight: 700;
+      letter-spacing: 0.2em; text-transform: uppercase;
+      color: var(--rose); margin-bottom: 0.8rem;
+    }
+    .paket.featured .paket-tier { color: rgba(255,255,255,0.5); }
+
+    .paket-price {
+      font-family: var(--font-display);
+      font-size: 3.5rem; font-weight: 300;
+      color: var(--brown); line-height: 1;
+      margin-bottom: 0.25rem;
+    }
+    .paket.featured .paket-price { color: var(--blush); }
+    .paket-price sup { font-size: 1.6rem; vertical-align: super; }
+
+    .paket-sub {
+      font-size: 0.78rem;
+      color: var(--brown-mid);
+      margin-bottom: 2rem;
+    }
+    .paket.featured .paket-sub { color: rgba(255,255,255,0.4); }
+
+    .paket-line { height: 1px; background: var(--blush-dark); margin-bottom: 2rem; }
+    .paket.featured .paket-line { background: rgba(255,255,255,0.1); }
+
+    .paket-features { list-style: none; flex: 1; margin-bottom: 2.5rem; }
+    .paket-features li {
+      display: flex; gap: 0.7rem; align-items: flex-start;
+      padding: 0.6rem 0;
+      font-size: 0.87rem;
+      color: var(--brown-mid);
+      border-bottom: 1px solid var(--blush);
+    }
+    .paket.featured .paket-features li {
+      color: rgba(255,255,255,0.72);
+      border-bottom-color: rgba(255,255,255,0.07);
+    }
+    .paket-features li::before {
+      content: '✓'; color: var(--rose);
+      font-weight: 700; flex-shrink: 0; margin-top: 1px;
+    }
+    .paket.featured .paket-features li::before { color: rgba(255,255,255,0.55); }
+
+    .paket .btn { width: 100%; text-align: center; }
+
+    .pakete-note {
+      text-align: center; margin-top: 2rem;
+      font-size: 0.82rem; color: var(--brown-mid);
+    }
+
+    /* ─── TESTIMONIAL ─── */
+    #testimonials {
+      padding: 8rem 0;
+      background: var(--cream);
+      position: relative;
+    }
+    #testimonials::before {
+      content: '';
+      position: absolute; inset: 0;
+      background-image: url('https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=1920&q=80&auto=format&fit=crop');
+      background-size: cover; background-position: center;
+      opacity: 0.07;
+    }
+    .testimonial-inner {
+      position: relative; z-index: 1;
+      text-align: center; max-width: 820px; margin: 0 auto;
+    }
+    .t-mark {
+      font-family: var(--font-display);
+      font-size: 9rem; line-height: 0.5;
+      color: var(--blush-dark); display: block;
+      margin-bottom: 1.5rem; user-select: none;
+    }
+    .t-stars { display: flex; justify-content: center; gap: 5px; margin-bottom: 2rem; }
+    .t-stars span { color: var(--rose); font-size: 1.1rem; }
+    .t-text {
+      font-family: var(--font-display);
+      font-size: clamp(1.3rem, 2.5vw, 2rem);
+      font-weight: 300; font-style: italic;
+      color: var(--brown); line-height: 1.6;
+      margin-bottom: 2.25rem; max-width: 100%;
+    }
+    .t-author {
+      font-size: 0.75rem; font-weight: 700;
+      letter-spacing: 0.18em; text-transform: uppercase;
+      color: var(--rose);
+    }
+
+    /* ─── CONTACT ─── */
+    #kontakt { padding: 8rem 0; background: var(--blush); }
+    .kontakt-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 6rem; align-items: start;
+    }
+    @media (max-width: 900px) { .kontakt-grid { grid-template-columns: 1fr; gap: 3.5rem; } }
+
+    .kontakt-info h2 { margin-bottom: 0.75rem; }
+    .kontakt-info > p { margin-bottom: 2.5rem; }
+
+    .k-items { display: flex; flex-direction: column; gap: 1.25rem; }
+    .k-item { display: flex; gap: 1rem; align-items: center; }
+    .k-icon {
+      width: 42px; height: 42px; flex-shrink: 0;
+      background: var(--rose); border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .k-icon svg { width: 18px; height: 18px; stroke: white; fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+    .k-item a, .k-item span {
+      font-size: 0.95rem; color: var(--brown);
+      text-decoration: none; transition: color 0.2s;
+    }
+    .k-item a:hover { color: var(--rose); }
+
+    /* Form */
+    .form-group { margin-bottom: 1.25rem; }
+    .form-group label {
+      display: block; margin-bottom: 0.45rem;
+      font-size: 0.7rem; font-weight: 700;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      color: var(--brown);
+    }
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      width: 100%;
+      padding: 0.85rem 1rem;
+      border: 1.5px solid var(--blush-dark);
+      background: var(--cream);
+      color: var(--brown);
+      font-family: var(--font-body);
+      font-size: 0.9rem;
+      outline: none;
+      transition: border-color 0.2s;
+      border-radius: 0;
+      appearance: none;
+    }
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus { border-color: var(--rose); }
+    .form-group textarea { resize: vertical; min-height: 135px; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    @media (max-width: 520px) { .form-row { grid-template-columns: 1fr; } }
+    .form-submit { width: 100%; text-align: center; }
+
+    /* ─── FOOTER ─── */
+    footer {
+      background: var(--brown);
+      padding: 3rem 0;
+    }
+    .footer-inner {
+      display: flex; justify-content: space-between;
+      align-items: center; gap: 1.5rem; flex-wrap: wrap;
+    }
+    .footer-brand {
+      font-family: var(--font-display);
+      font-size: 1.05rem;
+      color: rgba(255,255,255,0.8);
+    }
+    .footer-links { display: flex; gap: 1.5rem; list-style: none; }
+    .footer-links a {
+      color: rgba(255,255,255,0.4);
+      text-decoration: none; font-size: 0.78rem;
+      transition: color 0.2s;
+    }
+    .footer-links a:hover { color: rgba(255,255,255,0.8); }
+    .footer-copy { font-size: 0.75rem; color: rgba(255,255,255,0.35); }
+
+    /* ─── FADE-IN ANIMATIONS ─── */
+    .fi {
+      opacity: 0; transform: translateY(28px);
+      transition: opacity 0.75s ease, transform 0.75s ease;
+    }
+    .fi.vis { opacity: 1; transform: translateY(0); }
+    .fi-d1 { transition-delay: 0.1s; }
+    .fi-d2 { transition-delay: 0.2s; }
+    .fi-d3 { transition-delay: 0.3s; }
+    .fi-d4 { transition-delay: 0.4s; }
+    .fi-d5 { transition-delay: 0.5s; }
+  </style>
+</head>
+<body>
+
+<!-- ════ NAV ════ -->
+<nav id="nav">
+  <div class="container nav-inner">
+    <a href="#" class="nav-logo">
+      <svg viewBox="0 0 120 108" xmlns="http://www.w3.org/2000/svg">
+        <path d="M60 97 C50 87 12 66 12 38 C12 21 24 9 37 9 C47 9 55 15 60 23 C65 15 73 9 83 9 C96 9 108 21 108 38 C108 66 70 87 60 97Z" fill="#f8ede8" stroke="#b87060" stroke-width="2.2"/>
+        <text x="60" y="34" text-anchor="middle" font-family="Lato,sans-serif" font-size="6.5" letter-spacing="2.5" fill="#b87060" font-weight="700">ZWISCHEN</text>
+        <text x="60" y="61" text-anchor="middle" font-family="Georgia,serif" font-size="15" fill="#7a3f30" font-style="italic">Heide &amp; Herz</text>
+      </svg>
+      <div class="nav-brand">
+        <span>Freier Trauredner</span>
+        Eduard Schmal
+      </div>
+    </a>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#about"        onclick="closeNav()">Über mich</a></li>
+      <li><a href="#how"          onclick="closeNav()">Vorbereitung</a></li>
+      <li><a href="#pakete"       onclick="closeNav()">Pakete</a></li>
+      <li><a href="#testimonials" onclick="closeNav()">Stimmen</a></li>
+      <li><a href="#kontakt" class="btn btn-primary nav-cta" onclick="closeNav()">Anfragen</a></li>
+    </ul>
+
+    <button class="nav-toggle" id="nav-toggle" onclick="toggleNav()" aria-label="Menü">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ════ HERO ════ -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="container hero-content">
+    <span class="eyebrow">Freier Trauredner · Lüneburger Heide</span>
+    <h1>Eure Geschichte.<br><em>Euer Ja-Wort.</em><br>Für immer.</h1>
+    <p class="lead">Eine freie Trauung, die so einzigartig ist wie eure Liebe – mit einer Tiefe der Vorbereitung, die ihr nirgendwo sonst findet.</p>
+    <div class="hero-actions">
+      <a href="#kontakt" class="btn btn-primary">Jetzt anfragen</a>
+      <a href="#how" class="btn btn-outline">Meine Vorbereitung</a>
+    </div>
+  </div>
+  <a href="#numbers" class="hero-scroll">
+    <svg viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round">
+      <line x1="12" y1="5" x2="12" y2="19"/><polyline points="5 12 12 19 19 12"/>
+    </svg>
+    Entdecken
+  </a>
+</section>
+
+<!-- ════ NUMBERS ════ -->
+<section id="numbers">
+  <div class="container">
+    <div class="numbers-grid">
+      <div class="number-item fi fi-d1">
+        <span class="number-value">~45</span>
+        <span class="number-label">Minuten Zeremonie</span>
+      </div>
+      <div class="number-item fi fi-d2">
+        <span class="number-value">26</span>
+        <span class="number-label">Seiten Vorbereitung</span>
+      </div>
+      <div class="number-item fi fi-d3">
+        <span class="number-value">100%</span>
+        <span class="number-label">Maßgeschneidert</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════ ABOUT ════ -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+
+      <div class="about-image-wrap fi">
+        <div class="about-image-frame"></div>
+        <!-- Platzhalter bis eigenes Foto vorhanden – einfach durch euer Foto ersetzen -->
+        <img
+          src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=80&auto=format&fit=crop&crop=faces"
+          alt="Eduard Schmal – Freier Trauredner Lüneburger Heide"
+          loading="lazy"
+        >
+        <div class="about-image-caption">
+          „Zu sehen, wie Worte Menschen bewegen, ist fantastisch."
+        </div>
+      </div>
+
+      <div class="about-text fi fi-d2">
+        <span class="eyebrow">Über mich</span>
+        <h2>Aus Zufall geboren.<br>Mit Herz gemacht.</h2>
+        <div class="divider"></div>
+
+        <p>Ich bin Eduard – Trauredner aus der Lüneburger Heide. Und ehrlich gesagt bin ich durch Zufall zu dem geworden, was mich heute erfüllt wie kaum etwas anderes.</p>
+
+        <p>Schon als Teenager hielt ich Reden auf Familienfeiern. Später als Trauzeuge, als Führungskraft. Dann fragten mich – unabhängig voneinander und fast zeitgleich – zwei befreundete Paare, ob ich mir vorstellen könnte, ihre freie Trauung zu leiten.</p>
+
+        <p>Was danach passierte, hat mich verändert: Von Menschen, die man noch nie gesehen hat, beglückwünscht zu werden. Zu sehen, wie Worte verschiedene Menschen berühren, bewegen und erfreuen können.</p>
+
+        <div class="about-quote">
+          <p>„Ich möchte nur die Paare trauen, bei denen ich spüre, dass wir zusammenpassen. Eure Zeremonie bekommt damit meine volle Aufmerksamkeit."</p>
+        </div>
+
+        <p>Das ist kein Fulltime-Business. Das ist meine Leidenschaft. Und der Unterschied ist hörbar – an jedem einzelnen Wort eurer Rede.</p>
+
+        <a href="#kontakt" class="btn btn-primary" style="margin-top: 1.75rem;">Unverbindlich kennenlernen</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════ HOW I WORK ════ -->
+<section id="how">
+  <div class="container">
+
+    <div class="how-header fi">
+      <span class="eyebrow">Meine Vorbereitung</span>
+      <h2>Andere Trauredner sprechen kurz mit euch.<br><em>Ich tauche ein.</em></h2>
+      <div class="divider divider-center"></div>
+      <span class="lead">Eine wirklich persönliche Traurede entsteht nicht aus Textbausteinen. Sie entsteht aus den Details eurer Geschichte – und meiner Fähigkeit, sie zu erzählen.</span>
+    </div>
+
+    <div class="how-steps">
+      <div class="how-step fi fi-d1">
+        <span class="how-step-num">01</span>
+        <h3>Kennenlernen</h3>
+        <p>Wir schauen gemeinsam, ob es passt – persönlich oder per Video. Ohne Druck. Ich traue nur Paare, bei denen ich das richtige Gefühl habe.</p>
+      </div>
+      <div class="how-step fi fi-d2">
+        <span class="how-step-num">02</span>
+        <h3>Fragebogen Ehepaar</h3>
+        <p>Jeder von euch füllt getrennt voneinander einen detaillierten Fragebogen aus – 19 Fragen über eure Geschichte, den Antrag, eure Zukunft, eure Macken.</p>
+      </div>
+      <div class="how-step fi fi-d3">
+        <span class="how-step-num">03</span>
+        <h3>Herzensmenschen</h3>
+        <p>Ich befrage bis zu 5 eurer engsten Bezugspersonen separat. Was sehen andere in euch, das ihr selbst gar nicht seht? Genau das macht eure Rede unvergleichlich.</p>
+      </div>
+      <div class="how-step fi fi-d4">
+        <span class="how-step-num">04</span>
+        <h3>Zeremonie & Rede</h3>
+        <p>Aus allem entsteht eine Traurede und ein lückenloser Plan für euren großen Tag – Musik, Ablauf, Rituale, Eheversprechen. Alles. Für euch.</p>
+      </div>
+    </div>
+
+    <div class="how-banner fi">
+      <div class="how-banner-icon">♡</div>
+      <div>
+        <h3>26 Seiten Vorbereitung. Weil euer Tag es verdient.</h3>
+        <p>Mein Vorbereitungsprozess umfasst Checklisten, Fragebögen für das Brautpaar, separate Interviews mit euren Liebsten und ein tiefes Traugespräch. Das Ergebnis ist eine Zeremonie, die eure Gäste bewegen wird – und die ihr selbst nie vergessen werdet.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ════ RITUALE ════ -->
+<section id="rituale">
+  <div class="container">
+
+    <div class="section-header fi">
+      <span class="eyebrow">Rituale & Zeremonie</span>
+      <h2>Mehr als nur Worte</h2>
+      <div class="divider divider-center"></div>
+      <p>Gemeinsam wählen wir aus einer Reihe bedeutungsvoller Rituale – oder erfinden gemeinsam etwas ganz Eigenes, das nur zu euch passt.</p>
+    </div>
+
+    <div class="rituale-grid">
+      <div class="ritual-card fi fi-d1">
+        <span class="ritual-icon">💍</span>
+        <h3>Ringwanderung</h3>
+        <p>Die Ringe wandern durch die Gästereihen – jeder gibt ihnen seinen persönlichen Segenswunsch mit. Aufgeladen mit der Liebe aller.</p>
+      </div>
+      <div class="ritual-card fi fi-d2">
+        <span class="ritual-icon">🌊</span>
+        <h3>Sandzeremonie</h3>
+        <p>Zwei Sandfarben vereint in einem Glas – untrennbar verbunden, wie eure Leben. Optional mit Kindern oder Trauzeugen.</p>
+      </div>
+      <div class="ritual-card fi fi-d3">
+        <span class="ritual-icon">🌳</span>
+        <h3>Baumritual</h3>
+        <p>Ein gemeinsam gepflanzter Baum als Symbol. Er wächst mit euch – und trägt die Wünsche eurer Liebsten.</p>
+      </div>
+      <div class="ritual-card fi fi-d4">
+        <span class="ritual-icon">🕊️</span>
+        <h3>Wünsche in den Himmel</h3>
+        <p>Luftballons oder Feuerschale – eure Gäste schicken ihre Wünsche mit dem Wind gen Himmel.</p>
+      </div>
+      <div class="ritual-card fi fi-d5">
+        <span class="ritual-icon">🥂</span>
+        <h3>Brautbecher</h3>
+        <p>Ein alter Hochzeitsbrauch: Braut und Bräutigam trinken gleichzeitig als erstes Zeichen ihrer neuen Gemeinsamkeit.</p>
+      </div>
+      <div class="ritual-card fi">
+        <span class="ritual-icon">✨</span>
+        <h3>Euer eigenes Ritual</h3>
+        <p>Ihr habt eine Idee? Perfekt. Gemeinsam setzen wir sie um. Der Fantasie sind keine Grenzen gesetzt.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ════ PRICING ════ -->
+<section id="pakete">
+  <div class="container">
+
+    <div class="section-header fi">
+      <span class="eyebrow">Pakete & Preise</span>
+      <h2>Transparent. Ehrlich. Fair.</h2>
+      <div class="divider divider-center"></div>
+      <p>Drei Pakete – alle mit dem gleichen Versprechen: Eure Zeremonie wird unvergesslich.</p>
+    </div>
+
+    <div class="pakete-grid">
+
+      <!-- BASIS -->
+      <div class="paket fi">
+        <div class="paket-tier">Basis</div>
+        <div class="paket-price"><sup>€</sup>1.800</div>
+        <div class="paket-sub">inkl. MwSt. · Anreise bis 50 km</div>
+        <div class="paket-line"></div>
+        <ul class="paket-features">
+          <li>1 Kennenlerngespräch (persönlich oder Video)</li>
+          <li>Ausführlicher Fragebogen für das Brautpaar</li>
+          <li>Persönlich verfasste Traurede (ca. 45 Min.)</li>
+          <li>Ja-Wort &amp; Ringtausch</li>
+          <li>1 Ritual nach Wahl</li>
+          <li>Anreise bis 50 km inklusive</li>
+        </ul>
+        <a href="#kontakt" class="btn btn-outline">Anfragen</a>
+      </div>
+
+      <!-- KOMFORT (FEATURED) -->
+      <div class="paket featured fi fi-d1">
+        <div class="paket-badge">Beliebt</div>
+        <div class="paket-tier">Komfort</div>
+        <div class="paket-price"><sup>€</sup>2.200</div>
+        <div class="paket-sub">inkl. MwSt. · Anreise bis 50 km</div>
+        <div class="paket-line"></div>
+        <ul class="paket-features">
+          <li>2 Vorgespräche inkl. tiefem Traugespräch</li>
+          <li>Fragebögen für Brautpaar &amp; bis zu 3 Herzensmenschen</li>
+          <li>Persönliche Traurede mit Ritual-Elementen</li>
+          <li>Ja-Wort, Eheversprechen auf Wunsch &amp; Ringtausch</li>
+          <li>Bis zu 2 Rituale nach Wahl</li>
+          <li>Zeremonien-Checkliste &amp; Ablaufplanung</li>
+          <li>Anreise bis 50 km inklusive</li>
+        </ul>
+        <a href="#kontakt" class="btn btn-outline-light">Anfragen</a>
+      </div>
+
+      <!-- PREMIUM -->
+      <div class="paket fi fi-d2">
+        <div class="paket-tier">Premium</div>
+        <div class="paket-price"><sup>€</sup>2.900</div>
+        <div class="paket-sub">inkl. MwSt. · Anreise bis 50 km</div>
+        <div class="paket-line"></div>
+        <ul class="paket-features">
+          <li>3 Vorgespräche (Kennenlernen, Traugespräch, Abschluss)</li>
+          <li>Fragebögen für Brautpaar &amp; bis zu 5 Herzensmenschen</li>
+          <li>Individuell verfasste Traurede &amp; persönliche Eheversprechen</li>
+          <li>Rituale nach Wahl – vollständig individuell</li>
+          <li>Vollständige Zeremonien-Planung (Musik, Ablauf, Checkliste)</li>
+          <li>Optionale Probe des Ablaufs vor Ort</li>
+          <li>Anreise bis 50 km inklusive</li>
+        </ul>
+        <a href="#kontakt" class="btn btn-primary">Anfragen</a>
+      </div>
+
+    </div>
+
+    <p class="pakete-note">Anreise über 50 km: 0,50 € je Kilometer · Individuelle Pakete auf Anfrage</p>
+  </div>
+</section>
+
+<!-- ════ TESTIMONIALS ════ -->
+<section id="testimonials">
+  <div class="container">
+    <div class="testimonial-inner fi">
+      <span class="t-mark">"</span>
+      <div class="t-stars">
+        <span>♥</span><span>♥</span><span>♥</span><span>♥</span><span>♥</span>
+      </div>
+      <p class="t-text">
+        „Deine Rede war einfach ein Traum. Du hast jede Situation perfekt getroffen.
+        Besser hätte man unsere Geschichte nicht erzählen können."
+      </p>
+      <div class="t-author">Stephanie &amp; Viktor &ensp;·&ensp; 13. Juni 2026 &ensp;·&ensp; Wolfenbüttel</div>
+    </div>
+  </div>
+</section>
+
+<!-- ════ CONTACT ════ -->
+<section id="kontakt">
+  <div class="container">
+    <div class="kontakt-grid">
+
+      <div class="kontakt-info fi">
+        <span class="eyebrow">Kontakt</span>
+        <h2>Eure Geschichte<br>wartet auf mich.</h2>
+        <div class="divider"></div>
+        <p>Habt ihr Fragen oder möchtet einfach schauen, ob es zwischen uns passt? Schreibt mir – ich antworte persönlich. Unser erstes Gespräch ist völlig unverbindlich.</p>
+
+        <div class="k-items" style="margin-top: 2.5rem;">
+          <div class="k-item">
+            <div class="k-icon">
+              <svg viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            </div>
+            <a href="mailto:hallo@zwischen-heide-und-herz.de">hallo@zwischen-heide-und-herz.de</a>
+          </div>
+          <div class="k-item">
+            <div class="k-icon">
+              <svg viewBox="0 0 24 24"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+            </div>
+            <a href="tel:+4915226859524">01522 685 95 24</a>
+          </div>
+          <div class="k-item">
+            <div class="k-icon">
+              <svg viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            </div>
+            <span>Lüneburger Heide &amp; ganz Norddeutschland</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="fi fi-d2">
+        <form id="contact-form" onsubmit="sendMail(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="f-names">Eure Namen *</label>
+              <input type="text" id="f-names" placeholder="z. B. Anna &amp; Max" required>
+            </div>
+            <div class="form-group">
+              <label for="f-date">Hochzeitsdatum</label>
+              <input type="date" id="f-date">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="f-email">E-Mail-Adresse *</label>
+            <input type="email" id="f-email" placeholder="eure@email.de" required>
+          </div>
+          <div class="form-group">
+            <label for="f-paket">Paket-Interesse</label>
+            <select id="f-paket">
+              <option value="">Noch unentschieden</option>
+              <option value="Basis – 1.800 €">Basis – 1.800 €</option>
+              <option value="Komfort – 2.200 €">Komfort – 2.200 €</option>
+              <option value="Premium – 2.900 €">Premium – 2.900 €</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="f-msg">Eure Nachricht *</label>
+            <textarea id="f-msg" placeholder="Erzählt mir kurz von euch – wie ihr euch kennengelernt habt, wann eure Hochzeit ist und was ihr euch wünscht." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary form-submit">Nachricht senden</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════ FOOTER ════ -->
+<footer>
+  <div class="container footer-inner">
+    <div class="footer-brand">Zwischen Heide &amp; Herz</div>
+    <ul class="footer-links">
+      <li><a href="#">Impressum</a></li>
+      <li><a href="#">Datenschutz</a></li>
+    </ul>
+    <div class="footer-copy">© 2026 Eduard Schmal</div>
+  </div>
+</footer>
+
+<script>
+  /* ── Nav ── */
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 60);
+  }, { passive: true });
+
+  function toggleNav() {
+    const links = document.getElementById('nav-links');
+    links.classList.toggle('open');
+  }
+  function closeNav() {
+    document.getElementById('nav-links').classList.remove('open');
+  }
+
+  /* ── Fade-in observer ── */
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('vis'); });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+  document.querySelectorAll('.fi').forEach(el => io.observe(el));
+
+  /* ── Contact form → mailto ── */
+  function sendMail(e) {
+    e.preventDefault();
+    const names  = document.getElementById('f-names').value;
+    const date   = document.getElementById('f-date').value;
+    const email  = document.getElementById('f-email').value;
+    const paket  = document.getElementById('f-paket').value;
+    const msg    = document.getElementById('f-msg').value;
+
+    const subject = encodeURIComponent('Anfrage freie Trauung – ' + names);
+    const body = encodeURIComponent(
+      'Namen: ' + names + '\n' +
+      'E-Mail: ' + email + '\n' +
+      (date  ? 'Hochzeitsdatum: ' + date + '\n' : '') +
+      (paket ? 'Paket-Interesse: ' + paket + '\n' : '') +
+      '\nNachricht:\n' + msg
+    );
+
+    window.location.href = 'mailto:hallo@zwischen-heide-und-herz.de?subject=' + subject + '&body=' + body;
+  }
+</script>
+</body>
+</html>
