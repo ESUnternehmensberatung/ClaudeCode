@@ -72,6 +72,40 @@ _Eduard hat eine starke persönliche Marke – kann auch international tragen._
 
 ---
 
+## Kurzbeschreibungen (Google Business + Meta)
+
+### heathervows.com
+
+**Google Business (lang, bis 750 Zeichen):**
+> Heather Vows brings the magic of the Lüneburg Heath to weddings around the world. We create beautiful, personal wedding websites for couples — and for those who want more, Eduard Schmal officiates ceremonies in the heart of Northern Germany. Whether you're planning a destination wedding in the heathlands or getting married across the globe, Heather Vows is your partner for a day that feels like a love story. Wedding websites from €500. Ceremonies from €1,500.
+
+**Meta Description (160 Zeichen):**
+> Personal wedding websites & ceremonies rooted in the Lüneburg Heath. Your love story, beautifully told — wherever in the world you say „I do."
+
+---
+
+### vowstudio.com
+
+**Google Business (lang, bis 750 Zeichen):**
+> Vow Studio is your creative partner for everything that makes a wedding unforgettable. We design personal wedding websites for couples worldwide — and for those who want their ceremony to be just as special, our officiant service brings warmth, storytelling, and a personal touch to every vow exchange. Based in Northern Germany, working globally. Wedding websites from €500. Officiant packages from €1,500.
+
+**Meta Description (160 Zeichen):**
+> Wedding websites & officiant services for couples worldwide. Vow Studio crafts the digital and personal moments that make your wedding day complete.
+
+---
+
+## Vergleich der Wirkung
+
+| | heathervows.com | vowstudio.com |
+|---|---|---|
+| Ton | Emotional, erzählerisch, Ort als Marke | Professionell, modern, serviceorientiert |
+| Pinterest-Fit | Sehr stark – Heide als visuelles Thema | Gut – Studio als kreativer Anker |
+| Erklärungsbedarf | Minimal (Heather = Pflanze + Vows = Gelübde) | Keiner |
+| Einzigartigkeit | Hoch – kein direkter Wettbewerber | Mittel – „Studio" ist häufig |
+| Destination-Wedding-Anker | Ja (Lüneburg Heath als Sehnsuchtsort) | Nein |
+
+---
+
 ## Nächste Schritte
 
 1. Favoriten auf Domainverfügbarkeit prüfen (z.B. namecheap.com)
