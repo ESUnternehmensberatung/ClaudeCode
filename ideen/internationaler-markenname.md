@@ -54,11 +54,15 @@ _Eduard hat eine starke persönliche Marke – kann auch international tragen._
 
 ---
 
-## Favoriten (zur Diskussion)
+## Entscheidung ✅
 
-1. **vowstudio.com** – deckt beide Produkte ab, klingt professionell, Pinterest-tauglich
-2. **hearthvows.com** – emotional, einzigartig, kein direkter Wettbewerber
-3. **heathervows.com** – verbindet Eduards Heimat mit dem Produkt, einprägsam
+**heathervows.com** – Domain reserviert über all-inkl.com (2026-07-26)
+
+- vowstudio.com: vergeben (AWS-Server, nicht verfügbar)
+- heathervows.com: frei, gesichert
+
+**Übersetzung:** Heather = Heide (Calluna vulgaris, Lüneburger Heide) · Vows = Eheversprechen / Gelübde  
+Funktioniert für beide Produkte: Homepage + Trauredner/Officiant
 
 ---
 
