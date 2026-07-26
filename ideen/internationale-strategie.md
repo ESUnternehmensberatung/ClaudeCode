@@ -1,6 +1,6 @@
 # Internationale Strategie: Hochzeitshomepage × 1.000 Verkäufe
 
-_Gesammelt: 2026-07-26_
+_Gesammelt: 2026-07-26 · Aktualisiert: 2026-07-26_
 
 ---
 
@@ -12,14 +12,40 @@ Das Produkt „Hochzeitshomepage" (aktuell 500 €) international über Pinteres
 
 ---
 
-## Voraussetzungen (vor der Strategie klären)
+## Produktmodell (geklärt)
 
-| Frage | Antwort bestimmt alles |
+**Semi-automatisiertes Done-for-You:**
+
+```
+Kauf via Stripe
+      ↓
+Jotform-Briefing (Paar füllt Fragebogen aus)
+      ↓
+Eduard übergibt Briefing an Claude
+      ↓
+Claude erstellt Homepage nach Template
+      ↓
+Prüfung + Lieferung an das Paar
+```
+
+- Kein Self-Service – Eduard bleibt Übergabepunkt
+- Flaschenhals: Briefings abarbeiten (geschätzt 20–40 Min./Sale inkl. Prüfung)
+- Skalierbar bis ~50–100 Sales/Monat ohne Kapazitätsproblem
+- Stripe übernimmt Steuer automatisch (kein Kleinunternehmerstatus)
+
+**Template-Entwicklung:** Nach dem ersten echten Kauf wird gemeinsam mit Claude ein Template erarbeitet, das als Basis für alle Folge-Sales dient.
+
+---
+
+## Voraussetzungen (Stand nach Klärung)
+
+| Thema | Status |
 |---|---|
-| Ist die Homepage ein Template/Baukasten? | → skalierbar, 1.000× realistisch |
-| Oder wird jede Seite manuell gebaut? | → Kapazitätsgrenze, 1.000× nicht umsetzbar |
-| Welche Sprachen soll das Produkt abdecken? | EN für Start, dann FR/ES/NL? |
-| Gibt es einen Self-Service-Checkout? | Stripe + automatische Lieferung/Onboarding |
+| Produktmodell | ✅ Geklärt: Claude-gestützt nach Template |
+| Steuer/Stripe | ✅ Stripe Tax automatisch, kein Kleinunternehmer |
+| Template | ⏳ Wird nach erstem Kauf entwickelt |
+| Englische Landingpage | ⏳ Noch zu bauen |
+| Automatisierter Checkout | ✅ Jotform + Stripe vorhanden |
 
 ---
 
@@ -79,26 +105,30 @@ Kein Hard-Geoblocking nötig – freie Sprachwahl per Navigation + optionaler Au
 
 ---
 
-## Produktvoraussetzungen für 1.000 Verkäufe
+## Prozess-Checkliste für den ersten Sale
 
-Damit das Modell skaliert, muss der Kaufprozess vollständig automatisiert sein:
+- [ ] Template gemeinsam mit Claude entwickeln (nach erstem Kauf)
+- [ ] Jotform-Briefing so strukturieren, dass Claude alle nötigen Infos bekommt
+- [ ] Workflow dokumentieren: Briefing → Claude-Prompt → Output → Prüfung
+- [ ] Lieferprozess definieren (wie bekommt das Paar die fertige Seite?)
+- [ ] Stripe-Checkout für internationale Käufer testen
 
-- [ ] Stripe-Checkout ohne manuelle Intervention
-- [ ] Automatische Lieferung nach Kauf (Zugang zu Template, Formular, Onboarding-PDF)
-- [ ] Self-Service-Onboarding (Brautpaar füllt Fragebogen aus → automatisierter Output)
-- [ ] Kein oder minimaler Kundensupport pro Sale
-- [ ] Klare Produktbeschreibung in EN auf Landingpage
+## Skalierungsüberlegungen
+
+Bei wachsender Nachfrage:
+- Briefing-Queue priorisieren (z.B. nach Hochzeitsdatum)
+- Standard-Prompts für Claude optimieren (weniger Nacharbeit)
+- Bei >20 Sales/Monat: Lieferzeiten klar kommunizieren (z.B. „fertig in 5 Werktagen")
 
 ---
 
-## Offene Fragen / Nächste Schritte
+## Nächste Schritte
 
-1. **Produktmodell klären:** Template, Generator, oder Done-for-You?
-2. **Pinterest-Account aufbauen:** Boards auf DE + EN, organischer Content als Fundament
-3. **Englische Landingpage erstellen** (`/en/` oder neue Domain)
-4. **Automatisierungs-Stack festlegen:** Stripe → Zapier/Make → Lieferung
-5. **Steuerberater:** Umsatzsteuer bei internationalen B2C-Digitalleistungen
-6. **Pilotlauf:** 10 Sales manuell testen, dann automatisieren
+1. **Ersten Sale generieren** (DE-Markt, bestehende Seite) → Template ableiten
+2. **Template mit Claude entwickeln** → Briefing-to-Homepage-Workflow dokumentieren
+3. **Pinterest-Account aufbauen:** Boards auf DE + EN, organischer Content als Fundament
+4. **Englische Landingpage erstellen** (`/en/` oder neue Domain)
+5. **Pilotlauf international:** Erste Pinterest Ads in EN-Märkten (UK/USA)
 
 ---
 
@@ -108,8 +138,8 @@ Damit das Modell skaliert, muss der Kaufprozess vollständig automatisiert sein:
 |---|---|
 | Marktpotenzial | ★★★★★ – Hochzeit ist global, Pinterest ist ideal |
 | Technische Machbarkeit | ★★★★☆ – Geo-Routing einfach, Automatisierung etwas Aufwand |
-| Skalierbarkeit | ★★★☆☆ – Abhängig vom Produktmodell (Template vs. manuell) |
-| Risiko | Steuerliche Komplexität bei Auslandsverkäufen; Markenname sehr regional |
+| Skalierbarkeit | ★★★★☆ – Claude-gestützt, Eduard als Qualitätskontrolle; Flaschenhals bewusst |
+| Risiko | Markenname „Zwischen Heide & Herz" sehr regional – für INT. Markt neue Marke? |
 | Priorität | Nach Klärung des Produktmodells direkt umsetzbar |
 
 ---
